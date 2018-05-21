@@ -1,0 +1,6 @@
+- name: Update repository and install multiple package
+  hosts: nodes
+  roles:
+    - depots
+    - package
+    - resolvconf

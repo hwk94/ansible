@@ -1,0 +1,17 @@
+---
+- name: Disable SELinux
+  selinux: state=disabled
+
+- name: Install package htop | tcpdump | tshark 
+  apt: name={{ item }} state=latest
+  with_items: 
+    - htop
+    - tcpdump
+    - tshark
+    
+- name: Ensure that the installed service is started
+  service: name={{ item }} state=started enabled=yes
+  with_items:
+    - htop
+    - tcpdump
+    - tshark
