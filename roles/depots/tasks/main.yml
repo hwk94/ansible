@@ -1,5 +1,6 @@
 ---
 - name: Upgrade the latest version of all package
   apt:
-        update_cache: yes    
+         update_cache_yes
+         upgrade: dist    
 #Plusieurs manieres existent de mettre a jour les paquets j'ai choisi celui car il effectue un apt-update avant de mettre a jour les paquets, c'est une méthode safe  
