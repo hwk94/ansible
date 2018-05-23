@@ -4,3 +4,4 @@
     - depots
     - package
     - resolvconf
+#ce playbook va s'appliquer sur nos 3 machines [nodes] spécifié dans le fichier de configuration puis va executer les tâches depots package et resolvconf
