@@ -42,12 +42,9 @@
 
 ## db-[99:101]-node.example.com
 
-#192.168.197.132
-#192.168.197.131
-
 [nodes]
 #Suite a l'ajout du user ansible dans le groupe sudo, le controller n'arrive pas a s'y connecter, j'ai laisser root
 192.168.197.134 ansible_connection=ssh ansible_ssh_user=root ansible_become=yes
 192.168.197.136 ansible_connection=ssh ansible_ssh_user=root ansible_become=yes
-#Une troisieme machine que le controleur va se connecter sans précision de méthode 
+#Une troisieme machine a laquelle le controleur va se connecter sans précision de mode de connection 
 192.168.197.138
